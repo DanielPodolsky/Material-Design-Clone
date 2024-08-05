@@ -1,0 +1,231 @@
+/* General Styles */
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Make the page take up the full height of the viewport */
+    font-family: "Nanum Gothic", sans-serif;
+    background-color: #0D1B2A;
+}
+
+/* Header Styles */
+header {
+    width: 85%; /* Set the width of the header to 80% of the viewport */
+    height: 400px; /* Set the height of the header to 400 pixels */
+    margin: 0 auto; /* Center the header horizontally */
+    overflow: hidden; /* Hide any content that exceeds the container's height */
+    border-radius: 10px; /* Add rounded corners to the header */
+    color: #CCCCCC;
+}
+
+/* Header Sections */
+.header-main-left, .header-video-right {
+    width: 50%; /* Each section takes up 50% of the header's width */
+    height: 100%; /* The sections fill the entire height of the header */
+    float: left; /* Position the sections side by side */
+    box-sizing: border-box; /* Include the padding within the 50% width */
+    padding: 20px; /* Add 20 pixels of padding around the content */
+    border-radius: 10px; /* Add rounded corners to the sections */
+}
+
+.header-main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: #012c36;
+}
+
+.header-title {
+    font-size: 48px;
+}
+
+
+/* Video Styles */
+.header-video-right {
+    position: relative; /* Provide a reference point for the video positioning */
+}
+
+video {
+    position: absolute; /* Position the video absolutely within the .header-video-right section */
+    top: 0; /* Align the video to the top of the section */
+    left: 0; /* Align the video to the left of the section */
+    width: 100%; /* Make the video fill the entire width of the section */
+    height: 100%; /* Make the video fill the entire height of the section */
+    object-fit: cover; /* Maintain the video's aspect ratio while filling the section */
+    border-radius: 10px; /* Add rounded corners to the video */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block; /* Keep this to allow the button to sit inline with other elements */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: fit-content; /* Allow the button to size based on its content */
+    max-width: 100%; /* Prevent the button from exceeding its container's width */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Main Styles */
+main {
+    width: 55%; /* Set the width of the header to 80% of the viewport */
+    margin: 0 auto; /* Center the header horizontally */
+    overflow: hidden; /* Hide any content that exceeds the container's height */
+    border-radius: 10px; /* Add rounded corners to the header */
+    margin-top: 48px;
+    color: #CCCCCC;
+}
+
+
+.news-section {
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 7px; /* Adds space between the news items */
+}
+
+.news-item {
+    flex: 1; /* Makes each item take up equal width */
+    max-width: calc(33.333% - 7px); /* Ensures each item takes up about a third of the container width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #012c36;
+    border-radius: 15px;
+}
+
+.news-item img {
+    width: 100%; /* Makes the image fill the width of its container */
+    height: auto; /* Maintains the image's aspect ratio */
+}
+
+img {
+    border-radius: 15px;
+}
+
+.ds-updates {
+}
+
+.update-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+.update-item {
+    flex: 0 0 calc(33.333% - 7px);
+    max-width: calc(33.333% - 7px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #012c36;
+    border-radius: 15px;
+}
+
+.update-item img {
+    width: 100%; /* Makes the image fill the width of its container */
+    height: auto; /* Maintains the image's aspect ratio */
+}
+
+.resources {
+    
+}
+
+.resources-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.resource-item {
+    flex-basis: calc(50% - 10px);
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #012c36;
+    border-radius: 15px;
+}
+
+/* Optional: if you want to ensure only 2 items per row on larger screens */
+@media (min-width: 768px) {
+    .resource-item {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+footer {
+    width: 55%; /* Set the width of the header to 80% of the viewport */
+    margin: 0 auto; /* Center the header horizontally */
+    overflow: hidden; /* Hide any content that exceeds the container's height */
+    border-radius: 10px; /* Add rounded corners to the header */
+    color: #CCCCCC;
+}
+
+/* Header Sections */
+.footer-left, .footer-right {
+    width: 50%; /* Each section takes up 50% of the header's width */
+    float: left; /* Position the sections side by side */
+    box-sizing: border-box; /* Include the padding within the 50% width */
+    padding: 20px; /* Add 20 pixels of padding around the content */
+    border-radius: 10px; /* Add rounded corners to the sections */
+}
+
+.footer-left p {
+    font-size: 18px;
+}
+
+.footer-left img {
+    filter: brightness(0) invert(1);
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+    
+}
+.ul-title {
+    font-size: 14px;
+    color: #CCCCCC;
+}
+
+.footer-right ul li:not(.ul-title) {
+    margin-top: 16px;
+    color: rgb(159, 134, 255);
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px; /* Adds space between the ul elements */
+}
+
+.ul-title {
+    font-size: 14px;
+    color: #CCCCCC;
+}
+
+.ft-bottom {
+    float: left; /* Position the sections side by side */
+    box-sizing: border-box; /* Include the padding within the 50% width */
+    padding: 20px; /* Add 20 pixels of padding around the content */
+    border-radius: 10px; /* Add rounded corners to the sections */
+}
+
+.ft-bottom li {
+    display: inline-block;
+    margin-right: 15px; /* Adds space between items, adjust as needed */
+}
+
+/* Optional: remove margin from the last item */
+.ft-bottom li:last-child {
+    margin-right: 0;
+}
