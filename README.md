@@ -1,5 +1,4 @@
-# Material Design Clone
-# Codecademy Training
+# Material Design Clone - Code Cademy Traning
 This is my version of trying to clone Material Design's website
 
 
